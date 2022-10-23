@@ -2,7 +2,7 @@
   "name": "projeto-base",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/JefferCampos/Rocketseat-Explorer-Lab-JS-DOM",
+  "homepage": "https://jeffercampos.github.io/Rocketseat-Explorer-Lab-JS-DOM/",
   "type": "module",
   "scripts": {
     "dev": "vite",
