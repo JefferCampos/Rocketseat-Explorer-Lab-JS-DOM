@@ -1,4 +1,5 @@
 import "./css/index.css";
+import IMask from "imask";
 
 const ccBgColor01 = document.querySelector(
   ".cc-bg svg > g g:nth-child(1) path"
@@ -24,7 +25,6 @@ const securityCode = document.querySelector("#security-code");
 const securityCodePattern = {
   mask: "000",
 };
-
 const securityCodeMasked = IMask(securityCode, securityCodePattern);
 
 const expirationDate = document.querySelector("#expiration-date");
@@ -68,7 +68,7 @@ const cardNumberPattern = {
     const foundMask = dynamicMasked.compiledMasks.find(function (item) {
       return number.match(item.regex);
     });
-    console.log(foundMask);
+    return foundMask;
   },
 };
 
